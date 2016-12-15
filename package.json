@@ -10,11 +10,23 @@
 
       , "webpack": "*"
       , "webpack-combine-loaders": "*"
+      , "jsdoc-webpack-plugin": "*"
       , "extract-text-webpack-plugin": "*"
       , "babel-loader": "*"
+      , "babili-webpack-plugin": "*"
       , "babel-core": "*"
       , "babel-preset-es2015": "*"
       , "css-loader": "*"
       , "style-loader": "*"
+      , "postcss": "*"
+      , "postcss-loader": "*"
+      , "postcss-import": "*"
+      , "postcss-url": "*"
+      , "postcss-cssnext": "*"
+      , "postcss-import": "*"
+      , "postcss-responsive-type": "*"
+      , "postcss-import": "*"
+      , "postcss-responsive-type": "*"
+      , "normalize.css": "*"
     }
 }
