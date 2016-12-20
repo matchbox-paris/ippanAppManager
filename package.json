@@ -16,6 +16,7 @@
       , "babili-webpack-plugin": "*"
       , "babel-core": "*"
       , "babel-preset-es2015": "*"
+      , "babel-preset-latest": "*"
       , "css-loader": "*"
       , "style-loader": "*"
       , "postcss": "*"
