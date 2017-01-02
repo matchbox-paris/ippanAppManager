@@ -1,33 +1,29 @@
 {
-    "name": "ippanAppManager"
-  , "version": "0.1.0"
-  , "main": "./index.js"
-
-  , "dependencies": {
-        "ippankiban": "https://github.com/grid23/ippankibanJS.git"
-      , "ippanServer": "git+ssh://github.com/grid23/ippanServer.git"
-      , "ippanFSDB": "git+ssh://github.com/grid23/ippanFSDB.git"
-
-      , "webpack": "*"
-      , "webpack-combine-loaders": "*"
-      , "jsdoc-webpack-plugin": "*"
-      , "extract-text-webpack-plugin": "*"
-      , "babel-loader": "*"
-      , "babili-webpack-plugin": "*"
-      , "babel-core": "*"
-      , "babel-preset-es2015": "*"
-      , "babel-preset-latest": "*"
-      , "css-loader": "*"
-      , "style-loader": "*"
-      , "postcss": "*"
-      , "postcss-loader": "*"
-      , "postcss-import": "*"
-      , "postcss-url": "*"
-      , "postcss-cssnext": "*"
-      , "postcss-import": "*"
-      , "postcss-responsive-type": "*"
-      , "postcss-import": "*"
-      , "postcss-responsive-type": "*"
-      , "normalize.css": "*"
+    "name": "ippanAppManager",
+    "version": "0.1.0",
+    "main": "./index.js",
+    "dependencies": {
+        "babel-core": "*",
+        "babel-loader": "*",
+        "babel-plugin-transform-es2015-modules-commonjs": "*",
+        "babel-preset-es2015": "*",
+        "babel-preset-latest": "*",
+        "babili-webpack-plugin": "*",
+        "css-loader": "*",
+        "extract-text-webpack-plugin": "*",
+        "ippanFSDB": "https://github.com/grid23/ippanFSDB.git",
+        "ippanServer": "https://github.com/grid23/ippanServer.git",
+        "ippankiban": "https://github.com/grid23/ippankibanJS.git",
+        "jsdoc-webpack-plugin": "*",
+        "normalize.css": "*",
+        "postcss": "*",
+        "postcss-cssnext": "*",
+        "postcss-import": "*",
+        "postcss-loader": "*",
+        "postcss-responsive-type": "*",
+        "postcss-url": "*",
+        "style-loader": "*",
+        "webpack": "*",
+        "webpack-combine-loaders": "*"
     }
 }
