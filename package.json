@@ -6,6 +6,7 @@
         "babel-core": "*",
         "babel-loader": "*",
         "babel-plugin-transform-es2015-modules-commonjs": "*",
+        "babel-plugin-transform-runtime": "*",
         "babel-preset-es2015": "*",
         "babel-preset-latest": "*",
         "babili-webpack-plugin": "*",
