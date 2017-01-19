@@ -24,7 +24,7 @@
         "postcss-responsive-type": "*",
         "postcss-url": "*",
         "style-loader": "*",
-        "webpack": "*",
+        "webpack": "1.12.14",
         "webpack-combine-loaders": "*"
     }
 }
