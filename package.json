@@ -18,11 +18,9 @@
         "jsdoc-webpack-plugin": "*",
         "normalize.css": "*",
         "postcss": "*",
-        "postcss-cssnext": "*",
         "postcss-import": "*",
         "postcss-loader": "*",
         "postcss-responsive-type": "*",
-        "postcss-url": "*",
         "style-loader": "*",
         "webpack": "1.12.14",
         "webpack-combine-loaders": "*"
