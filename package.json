@@ -23,6 +23,7 @@
         "postcss-import": "*",
         "postcss-loader": "*",
         "postcss-responsive-type": "*",
+        "raw-loader": "^0.5.1",
         "style-loader": "*",
         "webpack": "1.12.14",
         "webpack-combine-loaders": "*"
