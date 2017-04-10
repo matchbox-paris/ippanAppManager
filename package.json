@@ -1,37 +1,37 @@
 {
-    "name": "ippan-app-manager",
-    "version": "0.1.1",
-    "main": "./index.js",
-    "contributors": [
-        "Grid23 <hello@grid23.net>"
-    ],
-    "engines": {
-        "nodejs": "^6.9.0"
-    },
-    "dependencies": {
-        "babel-core": "*",
-        "babel-loader": "*",
-        "babel-plugin-transform-es2015-modules-commonjs": "*",
-        "babel-plugin-transform-runtime": "*",
-        "babel-preset-es2015": "*",
-        "babel-preset-latest": "*",
-        "babili-webpack-plugin": "*",
-        "css-loader": "*",
-        "extract-text-webpack-plugin": "1.0.1",
-        "ippanfsdb": "^0.0.1",
-        "ippanserver": "^0.0.2",
-        "ippankiban": "^0.1.0",
-        "jsdoc-webpack-plugin": "*",
-        "normalize.css": "*",
-        "postcss": "*",
-        "postcss-color-function": "^3.0.0",
-        "postcss-cssnext": "^2.10.0",
-        "postcss-import": "*",
-        "postcss-loader": "*",
-        "postcss-responsive-type": "*",
-        "raw-loader": "^0.5.1",
-        "style-loader": "*",
-        "webpack": "1.12.14",
-        "webpack-combine-loaders": "*"
-    }
+  "name": "ippan-app-manager",
+  "version": "0.1.2",
+  "main": "./index.js",
+  "contributors": [
+    "Grid23 <hello@grid23.net>"
+  ],
+  "engines": {
+    "nodejs": "^6.9.0"
+  },
+  "dependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-es2015-modules-commonjs": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-latest": "*",
+    "babili-webpack-plugin": "*",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "1.0.1",
+    "ippanfsdb": "^0.0.1",
+    "ippanserver": "^0.0.2",
+    "ippankiban": "^0.1.0",
+    "jsdoc-webpack-plugin": "*",
+    "normalize.css": "*",
+    "postcss": "*",
+    "postcss-color-function": "^3.0.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-import": "*",
+    "postcss-loader": "*",
+    "postcss-responsive-type": "*",
+    "raw-loader": "^0.5.1",
+    "style-loader": "*",
+    "webpack": "1.12.14",
+    "webpack-combine-loaders": "*"
+  }
 }
