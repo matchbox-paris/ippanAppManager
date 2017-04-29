@@ -1813,27 +1813,27 @@ invariant@^2.2.0:
   dependencies:
     loose-envify "^1.0.0"
 
-"ippanFSDB@https://github.com/grid23/ippanFSDB.git":
-  version "0.0.0"
-  resolved "https://github.com/grid23/ippanFSDB.git#113c619e14f3974940129dc731aa815f93b57b41"
+ippanfsdb@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ippanfsdb/-/ippanfsdb-0.0.1.tgz#5ae7f52bced60c648c75b2296c47ac03a2a2adb6"
   dependencies:
-    ippankiban "https://github.com/grid23/ippankibanJS.git"
+    ippankiban "^0.1.0"
     js-beautify "*"
     js-yaml "^3.7.0"
 
-"ippanServer@https://github.com/grid23/ippanServer.git":
-  version "0.0.1"
-  resolved "https://github.com/grid23/ippanServer.git#d01d982a24f4e19253ae792d89d143ac4f8dd85e"
-  dependencies:
-    ippankiban "https://github.com/grid23/ippankibanJS.git"
-    phantomjs2 "^2.2.0"
-
-"ippankiban@https://github.com/grid23/ippankibanJS.git":
-  version "0.1.0"
-  resolved "https://github.com/grid23/ippankibanJS.git#3db8ee89c448b06efd71d0a41884cde376707300"
+ippankiban@^0.1.0:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/ippankiban/-/ippankiban-0.1.3.tgz#47ff28bebba4482320312e6eeacee97873f3e0af"
   dependencies:
     js-beautify "^1.6.11"
-    jsdom "*"
+    jsdom "^10.0.0"
+
+ippanserver@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ippanserver/-/ippanserver-0.0.2.tgz#83f78bb931d0a6b378cdfa3f528bfe1719a8c983"
+  dependencies:
+    ippankiban "^0.1.0"
+    phantomjs2 "^2.2.0"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -2009,9 +2009,9 @@ jsdoc@^3.4.0:
     taffydb "2.6.2"
     underscore "~1.8.3"
 
-jsdom@*:
-  version "9.12.0"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
+jsdom@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-10.0.0.tgz#3dda0b760aa248dd9b1392f8bb82e93ad70377b4"
   dependencies:
     abab "^1.0.3"
     acorn "^4.0.4"
@@ -2024,7 +2024,9 @@ jsdom@*:
     html-encoding-sniffer "^1.0.1"
     nwmatcher ">= 1.3.9 < 2.0.0"
     parse5 "^1.5.1"
+    pn "^1.0.0"
     request "^2.79.0"
+    request-promise-native "^1.0.3"
     sax "^1.2.1"
     symbol-tree "^3.2.1"
     tough-cookie "^2.3.2"
@@ -2163,7 +2165,7 @@ lodash.uniq@^4.3.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@^4.11.2, lodash@^4.17.4, lodash@^4.2.0:
+lodash@^4.11.2, lodash@^4.13.1, lodash@^4.17.4, lodash@^4.2.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -2555,6 +2557,10 @@ pleeease-filters@^3.0.0:
   dependencies:
     onecolor "~2.4.0"
     postcss "^5.0.4"
+
+pn@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pn/-/pn-1.0.0.tgz#1cf5a30b0d806cd18f88fc41a6b5d4ad615b3ba9"
 
 postcss-apply@^0.3.0:
   version "0.3.0"
@@ -3294,6 +3300,19 @@ request-progress@0.3.1:
   dependencies:
     throttleit "~0.0.2"
 
+request-promise-core@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/request-promise-core/-/request-promise-core-1.1.1.tgz#3eee00b2c5aa83239cfb04c5700da36f81cd08b6"
+  dependencies:
+    lodash "^4.13.1"
+
+request-promise-native@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/request-promise-native/-/request-promise-native-1.0.3.tgz#9cb2b2f69f137e4acf35116a08a441cbfd0c0134"
+  dependencies:
+    request-promise-core "1.1.1"
+    stealthy-require "^1.0.0"
+
 request@2.42.0:
   version "2.42.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.42.0.tgz#572bd0148938564040ac7ab148b96423a063304a"
@@ -3484,6 +3503,10 @@ sshpk@^1.7.0:
     jodid25519 "^1.0.0"
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
+
+stealthy-require@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.0.tgz#ca61cf38766158ea819a0a1b0070b35de957f9b0"
 
 stream-browserify@^1.0.0:
   version "1.0.0"
