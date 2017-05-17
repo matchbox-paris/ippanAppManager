@@ -27,7 +27,7 @@
     "postcss-color-function": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "*",
-    "postcss-loader": "*",
+    "postcss-loader": "1.0.0",
     "postcss-responsive-type": "*",
     "raw-loader": "^0.5.1",
     "style-loader": "*",
