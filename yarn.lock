@@ -362,7 +362,7 @@ babel-helpers@^6.23.0:
     babel-runtime "^6.22.0"
     babel-template "^6.23.0"
 
-babel-loader@*:
+babel-loader@6.4.1:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.4.1.tgz#0b34112d5b0748a8dcdbf51acf6f9bd42d50b8ca"
   dependencies:
@@ -1422,10 +1422,6 @@ esprima@^2.5.0, esprima@^2.6.0, esprima@^2.7.1:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
-esprima@^3.1.1:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
-
 estraverse@^1.9.1:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-1.9.3.tgz#af67f2dc922582415950926091a4005d29c9bb44"
@@ -1813,26 +1809,27 @@ invariant@^2.2.0:
   dependencies:
     loose-envify "^1.0.0"
 
-ippanfsdb@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ippanfsdb/-/ippanfsdb-0.0.1.tgz#5ae7f52bced60c648c75b2296c47ac03a2a2adb6"
+ippanfsdb@0.0.*:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ippanfsdb/-/ippanfsdb-0.0.6.tgz#e9e932ff6280ad98a729066f56f49d74c627aa1f"
   dependencies:
-    ippankiban "^0.1.0"
+    ippankiban "0.1.*"
+    ippanserver "0.0.*"
     js-beautify "*"
     js-yaml "^3.7.0"
 
-ippankiban@^0.1.0:
+ippankiban@0.1.*:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/ippankiban/-/ippankiban-0.1.3.tgz#47ff28bebba4482320312e6eeacee97873f3e0af"
   dependencies:
     js-beautify "^1.6.11"
     jsdom "^10.0.0"
 
-ippanserver@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/ippanserver/-/ippanserver-0.0.2.tgz#83f78bb931d0a6b378cdfa3f528bfe1719a8c983"
+ippanserver@0.0.*:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/ippanserver/-/ippanserver-0.0.9.tgz#2787d116f6097cd778eadfbc1a7909434a3fc343"
   dependencies:
-    ippankiban "^0.1.0"
+    ippankiban "0.1.*"
     phantomjs2 "^2.2.0"
 
 is-absolute-url@^2.0.0:
@@ -1962,14 +1959,7 @@ js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
-js-yaml@^3.4.3, js-yaml@^3.7.0:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.2.tgz#02d3e2c0f6beab20248d412c352203827d786721"
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^3.1.1"
-
-js-yaml@~3.7.0:
+js-yaml@^3.4.3, js-yaml@^3.7.0, js-yaml@~3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.7.0.tgz#5c967ddd837a9bfdca5f2de84253abe8a1c03b80"
   dependencies:
@@ -2822,7 +2812,7 @@ postcss-load-plugins@^2.3.0:
     cosmiconfig "^2.1.1"
     object-assign "^4.1.0"
 
-postcss-loader@*:
+postcss-loader@1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-1.3.3.tgz#a621ea1fa29062a83972a46f54486771301916eb"
   dependencies:
