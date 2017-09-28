@@ -1,0 +1,89 @@
+:root {
+
+  --global-font-root: 16;
+  --global-font-size: calc(var(--global-font-root) / 16 * 1em);
+  --global-line-height: 1.5;
+  --global-font-family: var(--font-family-base);
+  --global-background-color: #f6f6f6;
+  --global-color: var(--color-gray);
+
+
+
+
+
+  --overlay-background-color: rgba(0, 0, 0, .9);
+  --lightOverlay-background-color: rgba(255, 255, 255, .9);
+
+
+
+
+
+  --color-black: #212121;
+  --color-gold: #a37e2c;
+  --color-gray: #818181;
+  --color-gray-light: #c1c1c1;
+  --color-gray-lighter: #cbcbcb;
+  --color-green: #006039;
+  --color-red: #c80700;
+  --color-white: #fff;
+
+
+
+
+
+  --font-family-base: Helvetica, "Arial Nova", Arial, sans-serif;
+  --font-family-base-ja: "ＭＳ Ｐゴシック", "MS P Gothic", HiraKakuProN, "HiraKakuProN-W3", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  --font-family-base-ko: "Malgun Gothic", Dotum, AppleSDGothicNeo-Medium, "Apple SD Gothic Neo Medium", sans-serif;
+  --font-family-base-zhs: "Microsoft YaHei", "Heiti SC Light", "ST Heiti SC Light", "STHeiti SC Light", STHeitiSC-Light, "STHeiti Light", STXihei, sans-serif;
+  --font-family-base-zht: "Microsoft YaHei", "Heiti TC Light", "ST Heiti TC Light", "STHeiti TC Light", STHeitiTC-Light, "STHeiti Light", STXihei, sans-serif;
+
+  --font-family-gothic: "Engravers Gothic W10 Regular", "Engravers Gothic W02 Regular", Helvetica, sans-serif;
+  --font-family-gothic-ja: "ＭＳ Ｐゴシック", "MS P Gothic", HiraKakuProN, "HiraKakuProN-W3", "Hiragino Kaku Gothic ProN W3", Helvetica, sans-serif;
+  --font-family-gothic-ko: "Malgun Gothic", Dotum, AppleSDGothicNeo-Medium, "Apple SD Gothic Neo Medium", Helvetica, sans-serif;
+  --font-family-gothic-zhs: "Microsoft YaHei", "Heiti SC Light", "ST Heiti SC Light", "STHeiti SC Light", STHeitiSC-Light, "STHeiti Light", STXihei, Helvetica, sans-serif;
+  --font-family-gothic-zht: "Microsoft YaHei", "Heiti TC Light", "ST Heiti TC Light", "STHeiti TC Light", STHeitiTC-Light, "STHeiti Light", STXihei, Helvetica, sans-serif;
+
+
+
+
+
+  --viewport-x-small: 20em;
+  --viewport-small: 40em;
+  --viewport-medium: 40.0625em;
+  --viewport-large: 60.0625em;
+  --viewport-x-large: 80.0625em;
+
+  @custom-media --x-small screen and (max-width: 20em);
+  @custom-media --small screen and (max-width: 40em);
+  @custom-media --medium screen and (min-width: 40.0625em);
+  @custom-media --large screen and (min-width: 60.0625em);
+  @custom-media --x-large screen and (min-width: 80.0625em);
+
+  @custom-media --hidpi screen and (min-resolution: 2dppx);
+
+  @custom-media --portrait screen and (orientation: portrait);
+  @custom-media --landscape screen and (orientation: landscape);
+
+
+
+
+
+  --transition-function-easeOutQuint: cubic-bezier(.23, 1, .32, 1);
+
+  --transition-default: .5s var(--transition-function-easeOutQuint);
+
+
+
+
+
+  --z-index-nav: 100;
+  --z-index-banner: 200;
+  --z-index-layer: 300;
+
+
+
+
+
+  --nav-height-small: 3.125rem;
+  --nav-height-large: 5rem;
+}

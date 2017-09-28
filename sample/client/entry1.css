@@ -1,0 +1,450 @@
+/* ==========================================================================
+   CSS
+   ========================================================================== */
+
+/**
+ * Global styles. Everything else is local by default.
+ * To style components that are not part of the build, do as so:
+ * `:global .foo {color: #bada55}`.
+ */
+
+/**
+ * CONTENT
+ *
+ * SETTINGS
+ *
+ * Env.....................Project-wide variables.
+ *
+ * GENERIC
+ *
+ * Normalize.css...........A collection of style-normalizations.
+ * Reset...................Complementary opinionated defaults.
+ * Backgrounds.............A better default `background`.
+ * Border-collapse.........A better default `border-collapse`.
+ * Box-sizing..............A better default `box-sizing`.
+ * Button..................Remove default button styles.
+ * SVG.....................Default fill for SVGs.
+ *
+ * BASE
+ *
+ * Webfonts................Font-face definitions.
+ * Page....................Page-level styles (HTML element).
+ * Selection...............Text selection redefined.
+ * Headings................Heading styles.
+ * Type....................Misc type styles.
+ * Links...................Links styles.
+ * Quotes..................Styling for blockquotes, etc.
+ * Tables..................Tables base style.
+ */
+
+
+/**
+ * SETTINGS
+ */
+
+
+
+
+
+@import "./base.css";
+
+
+
+
+
+/**
+ * GENERIC
+ */
+
+
+
+
+
+@import "normalize.css";
+
+
+
+
+
+/* GENERIC: Reset
+   ========================================================================== */
+
+/**
+ * Remove default figure styles
+ */
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Remove default fieldset styles
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove the `clear button`
+ * ms-clear pseudo-element on IE 10 & 11
+ */
+
+::-ms-clear {
+  display: none;
+}
+
+/**
+ * Remove default lists style (opinionated)
+ */
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Yes that's a thing. Now.
+ */
+
+app {
+  display: block;
+}
+
+
+
+
+
+/* GENERIC: Backgrounds
+   ========================================================================== */
+
+/**
+ * Default behaviour people would expect for backgrounds
+ */
+
+*:not(body) {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+/* GENERIC: Border-collapse
+   ========================================================================== */
+
+/**
+ * Tables borders like they should be
+ */
+
+html {
+  border-collapse: collapse;
+}
+
+* {
+  border-collapse: inherit;
+}
+
+
+
+
+
+/* GENERIC: Box-sizing
+   ========================================================================== */
+
+/**
+ * Box model like it should be
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+
+html {
+  box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+/* GENERIC: Button
+   ========================================================================== */
+
+/**
+ * Remove default button styles
+ */
+
+button {
+  appearance: none;
+  background: transparent none;
+  border: 0;
+  color: inherit;
+  outline: none;
+  padding: 0;
+  user-select: none;
+}
+
+button::-moz-focus-inner {
+  border-width: 0;
+  text-indent: 0
+}
+
+button:-moz-focusring {
+  outline: none;
+}
+
+button[disabled] {
+  pointer-events: none;
+}
+
+
+
+
+
+/* GENERIC: SVG
+   ========================================================================== */
+
+/**
+ * Use current color as the default fill of svg elements
+ */
+
+svg {
+  fill: currentColor;
+}
+
+
+
+
+
+/**
+ * BASE
+ */
+
+
+
+
+
+/* BASE: Webfonts
+   ========================================================================== */
+
+/*!
+ * This CSS resource incorporates links to font software which is the valuable copyrighted
+ * property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+ * redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+ * Imaging with any questions regarding Web Fonts: http://webfonts.fonts.com
+ */
+
+
+/* BASE: Page
+   ========================================================================== */
+
+/**
+ * 1. Force IE11 & Edge to use a "normal", non-overlapping, non-auto-hiding scrollbar.
+ *    See: https://github.com/twbs/bootstrap/issues/18543
+ * 2. Force vertical scrollbar at all time.
+ * 3. Better font smoothing.
+ * 4. Remove gray highlight when tapping links in Safari Mobile.
+ */
+
+html {
+  background: var(--global-background-color);
+  color: var(--global-color);
+  font: 100 var(--global-font-size)/var(--global-line-height) var(--global-font-family);
+  height: 100%;
+  -ms-overflow-style: scrollbar; /* 1 */
+  overflow-y: scroll; /* 2 */
+  -webkit-font-smoothing: subpixel-antialiased; /* 3 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 4 */
+}
+
+body {
+  min-height: 100%;
+}
+
+
+
+
+
+/* BASE: Selection
+   ========================================================================== */
+
+/**
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ */
+
+::selection {
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: none;
+}
+
+
+
+
+
+/* BASE: Headings
+   ========================================================================== */
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+:--headings {
+  font-weight: 300;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+/* BASE: Type
+   ========================================================================== */
+
+p {
+  letter-spacing: -.025em;
+  margin-top: 0;
+}
+
+small {
+  font-size: 75%;
+  line-height: 1.25;
+}
+
+
+
+
+
+/* BASE: Links
+   ========================================================================== */
+
+:link,
+:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+
+
+/* BASE: Quotes
+   ========================================================================== */
+
+blockquote {
+  quotes: "\201C" "\201D";
+
+  &::before {
+    content: open-quote;
+
+    @nest [dir=ltr] & {
+      padding-right: .5em;
+    }
+
+    @nest [dir=rtl] & {
+      padding-left: .5em;
+    }
+  }
+
+  &::after {
+    content: close-quote;
+
+    @nest [dir=ltr] & {
+      padding-left: .5em;
+    }
+
+    @nest [dir=rtl] & {
+      padding-right: .5em;
+    }
+  }
+
+  &:lang(ar),
+  &:lang(fa) {
+    quotes: "\201D" "\201C";
+  }
+
+  &:lang(fr),
+  &:lang(es),
+  &:lang(ru) {
+    quotes: "\00ab" "\00bb";
+  }
+
+  &:lang(de) {
+    quotes: "\201E" "\201C";
+  }
+
+  &:lang(ja),
+  &:lang(zh-Hans),
+  &:lang(zh-Hant) {
+    quotes: "\300C" "\300D";
+  }
+}
+
+
+
+
+
+/* BASE: Tables
+   ========================================================================== */
+
+table {
+  width: 100%;
+}
+
+thead {
+  color: var(--color-gray);
+}
+
+tbody {
+  color: var(--color-black);
+}
+
+th, td {
+  padding: .5em .2em;
+}
+
+th {
+  font-size: 80%;
+  font-weight: 100;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: bottom;
+
+  @nest [dir=rtl] & {
+    text-align: right;
+  }
+}
+
+td {
+  vertical-align: middle;
+}
+
+tr {
+
+  @nest tbody & {
+    border-top: 1px solid var(--color-gray-lighter);
+  }
+}

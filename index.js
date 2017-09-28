@@ -2,5 +2,5 @@
 
 module.exports = {
     App: require("./lib/App.js").App
-  , WebpackBundler: require("./lib/WebpackBundler").WebpackBundler
+  , WebpackBundler: require("./lib/Webpack3Bundler").Webpack3Bundler
 }

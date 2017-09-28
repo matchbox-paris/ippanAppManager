@@ -1,0 +1,85 @@
+@import "./base.css";
+/*@value tip as animation-tip from "./animation.css";*/
+
+.base {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+
+  @media (--portrait) {
+    height: calc(4.375rem + (5.625 - 4.375) * ((100vw - 40.0625em) / 20));
+
+    @media (--small) {
+      height: 3.125rem;
+    }
+
+    @media (--large) {
+      height: 5.625rem;
+    }
+  }
+
+  @media (--landscape) {
+    height: calc(4.375rem + (5.625 - 4.375) * ((100vh - 40.0625em) / 20));
+
+    @media (max-height: var(--viewport-small)) {
+      height: 3.125rem;
+    }
+
+    @media (min-height: var(--viewport-large)) {
+      height: 5.625rem;
+    }
+  }
+
+  & .tip,
+  &::before {
+    background: currentColor;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  & .tip {
+    border-radius: 50%;
+    height: .4375em;
+    width: .4375em;
+  }
+
+  &::before {
+    height: 100%;
+    width: 1px;
+  }
+}
+
+
+
+
+
+.animated {
+  /*composes: tip from "./animation.css";*/
+  composes: foo from "./foo.css";
+}
+
+.down {
+  composes: base;
+
+  & .tip,
+  &::before {
+    top: 0;
+  }
+}
+
+
+
+
+
+.up {
+  composes: base;
+
+  & .tip,
+  &::before {
+    top: 0;
+  }
+}
