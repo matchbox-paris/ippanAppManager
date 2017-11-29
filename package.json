@@ -17,6 +17,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-minify": "^0.2.0",
     "css-loader": "^0.28.7",
+    "cssnano": "^4.0.0-rc.2",
     "extract-text-webpack-plugin": "^3.0.0",
     "ippanfsdb": "^0.0.8",
     "ippankiban": "0.1.*",
@@ -34,9 +35,9 @@
   },
   "devDependencies": {
     "normalize.css": "^5.0.0",
-    "postcss-color-function": "^3.0.0",
-    "postcss-cssnext": "^2.11.0",
-    "postcss-import": "^9.1.0",
-    "postcss-responsive-type": "^0.5.0"
+    "postcss-color-function": "^4.0.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-responsive-type": "^1.0.0"
   }
 }
