@@ -9,6 +9,7 @@
     "nodejs": "*"
   },
   "dependencies": {
+    "ajv": "^6.9.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-minify-dead-code-elimination": "^0.2.0",
